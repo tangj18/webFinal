@@ -1,0 +1,11 @@
+<p>Contact Us!</p>
+<span *ngIf="!submit">{{error}}</span>
+<form class="temp" #f="ngForm" (ngSubmit)="validate(f)" novalidate>
+    <label class="temp">name</label><br>
+    <input type="text" class="temp" name="name" ngModel><br>
+    <label class="temp">email</label><br>
+    <input type="text" class="temp" name="email" ngModel><br>
+    <label class="temp">message</label><br>
+    <input type="text" class="temp" name="message" ngModel><br>
+<button>Submit</button>
+</form>
